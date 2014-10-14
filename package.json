@@ -1,11 +1,11 @@
 {
-  "name": "ioshat-swift-label",
-  "title": "Label",
+  "name": "ioshat-swift-distance",
+  "title": "Layer Distance (Swift)",
   "version": "0.0.1",
-  "description": "Template for Label in Swift",
-  "main": "main.js",
-  "category": "label",
-  "layerType": ["textLayer"],
+  "description": "Template for Layer Distance in Swift",
+  "scope": "source.swift",
+  "main": "main.coffee",
+  "category": "distance",
   "author": "Tomas Ruzicka <tomasruzicka@abdoc.net> (https://github.com/lezuse)",
   "license": "MIT",
   "dependencies": {
