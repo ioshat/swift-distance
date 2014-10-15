@@ -35,12 +35,12 @@ class Swift
   render: ($) ->
     @constraints $
 
-    if @options.distance.x
+    if @options.distance.x and @measures.distanceX >= 0
       $ "// views #{@layers[0].name}, #{@layers[1].name} horizontal distance"
       $ "view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(\"H:[#{@layers[0].name}]-#{@measures.distanceX}-[#{@layers[1].name}]\", options: .DirectionLeadingToTrailing, metrics: nil, views: [\"#{@layers[0].name}\": #{@layers[1].name}]))"
       $.newline()
 
-    if @options.distance.y
+    if @options.distance.y and @measures.distanceY >= 0
       $ "// views #{@layers[0].name}, #{@layers[1].name} vertical distance"
       $ "view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(\"V:[#{@layers[0].name}]-#{@measures.distanceY}-[#{@layers[1].name}]\", options: .DirectionLeadingToTrailing, metrics: nil, views: [\"#{@layers[0].name}\": #{@layers[1].name}]))"
       $.newline()
